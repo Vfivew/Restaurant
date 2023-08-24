@@ -1,0 +1,12 @@
+@import './cleanStyle.scss';
+
+$base-color: rgb(75, 121, 73);
+
+body{
+    background-color: $base-color;
+}
+
+nav {
+    background-color: red;
+}
+
