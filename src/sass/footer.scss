@@ -1,0 +1,62 @@
+@import "./variables.scss";
+
+.footer-block{
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    font-family: $base-font;
+    font-size: $base-size;
+    color:$fourth-color;
+    background-color:$second-color;
+    align-items: center;
+
+        h3{
+            color:$base-color;
+            text-align: left;
+            font-size: $thirty-size;
+            font-weight: 400;
+            letter-spacing:2px;
+        }
+            .footer-locations{
+                width: 50%;
+                margin: 1em 2em;
+            }
+
+            .footer-time{
+                width: 50%;
+                margin: 1em 2em;
+            }
+                .footer-locations-block{
+                    justify-content: space-between;
+                    display: flex;
+                    text-align: left;
+                }
+
+            .footer-time-block{
+                    justify-content: space-between;
+                    display: flex;
+                    text-align: left;
+                }
+}
+
+.footer-block-copy{
+    color:$fourth-color;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 1.4em;
+        span{
+            color:$base-color
+        }
+        div {
+            a {
+                font-size: $thirty-size;
+                margin-right: 10px;
+            }
+        }
+}
+
+
+
+

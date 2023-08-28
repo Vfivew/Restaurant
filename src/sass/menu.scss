@@ -1,0 +1,87 @@
+@import "./variables.scss";
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+.chessboard-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.chessboard-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: -3em 3em;
+}
+
+.square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-width: 270px;
+  min-height: 270px;
+  max-width: 270px;
+  max-height: 270px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; 
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    h3 {
+        font-weight: 400;
+        font-family: $base-font;
+        font-size: $second-size;
+        color: $second-color;
+        margin-bottom: 0.5em;
+    }
+    p{
+        font-weight: 400;
+        font-family: $base-font;
+        font-size: $base-size;
+        color: $fourth-color;
+        margin: 0 2em 2em 2em;
+    }
+    span{
+        color:$thirty-color
+    }
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    ul{
+        list-style: none;
+    }
+    figure {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+
+
+}
