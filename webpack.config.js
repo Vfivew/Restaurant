@@ -6,10 +6,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   mode: "development",
   entry: {
-    filename: path.resolve(__dirname,"src/index.js")}, // Путь к вашему входному файлу
+    filename: path.resolve(__dirname,"src/index.js")},
   output: {
-    filename: '[name][contenthash].js', // Имя файла сборки
-    path: path.resolve(__dirname, 'docs'), // Путь к директории для сохранения
+    filename: '[name][contenthash].js', 
+    path: path.resolve(__dirname, 'docs'), 
     assetModuleFilename: "[name][ext]",
     clean:true
   },
