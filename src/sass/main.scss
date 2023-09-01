@@ -1,12 +1,22 @@
 @import './cleanStyle.scss';
+@import './header.scss';
+@import "./footer.scss";
+@import './store.scss';
+@import './parallax.scss';
+@import "./menu.scss";
+@import "./form.scss";
+@import './events.scss';
+@import "./chat.scss";
+@import './animation.scss';
 
-$base-color: rgb(75, 121, 73);
-
-body{
-    background-color: $base-color;
+html {
+scroll-behavior: smooth;
 }
 
-nav {
-    background-color: red;
+body {
+    font-family:$base-font;
+    scroll-behavior: smooth;
 }
+
+
 

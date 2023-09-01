@@ -4,32 +4,485 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Page Title</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Подключение файла стилей -->
-<script defer src="filenameb217cf5dd639a804573d.js"></script></head>
-<body>
-  <header>
-    <h1>Your Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- <link rel="stylesheet" href="styles.css">  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,800&family=Pinyon+Script&family=Roboto:ital@0;1&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body class="background">
+  <!--HEADER-->
+  <header class="header" id="header">
+  <div class="navbar">
+    <h3 class ='nav-reference logo' href="#" >Resto</h3>
+    <div class="navbar-right">
+      <a class="active nav-reference" href="#">WELCOME</a>
+      <a class ='nav-reference' href="#">SPECIALTIES</a>
+      <a class ='nav-reference' href="#">MENU</a>
+      <a class ='nav-reference' href="#">RESERVATION</a>
+      <a class ='nav-reference' href="#">EVENTS</a>
+      <a class ='nav-reference' href="#">CONTACT</a>
+    </div>
+    <div class="burger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="./assets/food/background/slider-img3.jpg" alt="Slide 3">
+          <section class="slide-description">
+          <h2>
+            Enjoy
+          </h2>
+          <p>
+            A lot if description about something
+          </p> 
+        </section>
+        </div>
+        <div class="slide">
+          <img src="./assets/food/background/slider-img1.jpg" alt="Slide 1">
+          <section class="slide-description slide-description-first">
+          <h2>
+             Welcome
+          </h2>
+          <p>
+            A lot if description about something
+          </p> 
+        </section>
+        </div>
+        <div class="slide">
+          <img src="./assets/food/background/slider-img2.jpg" alt="Slide 2">
+          <section class="slide-description">
+          <h2>
+            Dine
+          </h2>
+          <p>
+            A lot if description about something
+          </p> 
+        </section>
+        </div>
+        <div class="slide">
+          <img src="./assets/food/background/slider-img3.jpg" alt="Slide 3">
+          <section class="slide-description">
+          <h2>
+            Enjoy
+          </h2>
+          <p>
+            A lot if description about something
+          </p>
+        </section>
+        </div>
+        <div class="slide">
+          <img src="./assets/food/background/slider-img1.jpg" alt="Slide 1">
+          <section class="slide-description slide-description-first">
+          <h2>
+             Welcome
+          </h2>
+          <p>
+            A lot if description about something
+          </p> 
+        </section>
+        </div>
+      </div>
+      <button class="prev-button">&lt;</button>
+      <button class="next-button">&gt;</button>
+    </div>
   </header>
-  
+  <!--  -->
   <main>
-    <section>
-      <h2>Welcome to Our Website</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod auctor massa, ac bibendum justo auctor nec.</p>
+    <section class="store section">
+      <div class="store-description">
+        <h2>Discoveer</h2>
+        <h3>OUR STORE</h3>
+        <span>* * *</span>
+        <p>To much description To much description To much description To much description To much description To much description To much description To much description</p>
+        <p>
+          <a class="store-description-about" href="">ABOUT US</a>
+        </p>
+      </div>
+      <div class="store-image">
+        <p>
+          <img class="store-image-block" src="./assets/food/background/stories.jpg" alt="Resto">
+        </p>
+      </div>
     </section>
+    <section class="parallax-section parallax-section-1" id="menu">
+      <div class="parallax-content">
+        <h2>Discover</h2>
+        <p>OUR SPECIALTIES</p>
+      </div>
+    </section>
+    <section class="menu section" >
+      <div class="chessboard-menu">
+        <div class="square">
+          <h3>
+            OVERSEAS SNACK
+          </h3>
+          <p>
+            Discover the essence of global cuisine with our enticing creation – a medley of international flavors and satisfying textures.
+          </p>
+          <span>
+            19.99$
+          </span>
+        </div>
+        <div class="square"><img src="./assets/food/an-overseas-snack.jpg" alt="Overseas snack"></div>
+        <div class="square">
+          <h3>
+            APPETIZER MADE OF GREENS
+          </h3>
+          <p>
+            Discover the essence of global cuisine with our enticing creation – a medley of international flavors and satisfying textures.
+          </p>
+          <span>
+            22.99$
+          </span>
+        </div>
+        <div class="square"><img src="./assets/food/appetizer-made-of-greens.jpg" alt="appetizer made of greens"></div>
+        <div class="square"><img src="./assets/food/baked-fish.jpg" alt="baked fish"></div>
+        <div class="square">
+          <h3>
+            BAKED FISH
+          </h3>
+          <p>
+            Discover the essence of global cuisine with our enticing creation – a medley of international flavors and satisfying textures.
+          </p>
+          <span>
+            27.99$
+          </span>
+        </div>
+        <div class="square"><img src="./assets/food/croutons.jpg" alt="croutons"></div>
+        <div class="square">
+          <h3>
+            CROUTONS
+          </h3>
+          <p>
+            Discover the essence of global cuisine with our enticing creation – a medley of international flavors and satisfying textures.
+          </p>
+          <span>
+            19.99$
+          </span>
+        </div>
+        <div class="square">
+          <h3>
+            BERRY SALAD
+          </h3>
+          <p>
+            Discover the essence of global cuisine with our enticing creation – a medley of international flavors and satisfying textures.
+          </p>
+          <span>
+            17.99$
+          </span>
+        </div>
+        <div class="square"><img src="./assets/food/berry-salad.jpg" alt="berry salad"></div>
+        <div class="square">
+          <h3>
+            CHOCOLATE CUPCAKE
+          </h3>
+          <p>
+            Discover the essence of global cuisine with our enticing creation – a medley of international flavors and satisfying textures.
+          </p>
+          <span>
+            24.99$
+          </span>
+        </div>
+        <div class="square"><img src="./assets/food/chocolate-cupcake.jpg" alt="chocolate cupcake"></div>
+        <div class="square"><img src="./assets/food/fried-salmon.jpg" alt="fried salmon"></div>
+        <div class="square">
+          <h3>
+            FRIED SALMON
+          </h3>
+          <p>
+            Discover the essence of global cuisine with our enticing creation – a medley of international flavors and satisfying textures.
+          </p>
+          <span>
+            29.99$
+          </span>
+        </div>
+        <div class="square"><img src="./assets/food/fritters.jpg" alt="fritters"></div>
+        <div class="square">
+          <h3>
+            FRITTERS
+          </h3>
+          <p>
+            Discover the essence of global cuisine with our enticing creation – a medley of international flavors and satisfying textures.
+          </p>
+          <span>
+            19.99$
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="parallax-section parallax-section-2" id="menu-list">
+      <div class="parallax-content">
+        <h2>Discover</h2>
+        <p>OUR MENU</p>
+      </div>
+    </section>
+    <section class="menu-list section">
+      <div class="menu-list-block">
+        <ul>
+          <li class="menu-list-item">
+            <figure>
+              <img src="./assets/food/an-overseas-snack.jpg" alt="">
+            </figure>
+              <div class="menu-list-item-description">
+                <h3>OVERSEAS SNACK
+                <p>Something / Example / Rice / Meat
+              </div>
+              <span> $19.99
+          </li>
+          <li class="menu-list-item">
+            <figure>
+              <img src="./assets/food/appetizer-made-of-greens.jpg" alt="">    
+            </figure>
+              <div class="menu-list-item-description">
+                <h3>APPETIZER MADE OF GREENS
+                <p>Something / Example / Rice / Meat
+              </div>
+              <span>22.99$
+          </li>
+          <li class="menu-list-item">
+            <figure>
+              <img src="./assets/food/baked-fish.jpg" alt="">
+           </figure>
+              <div class="menu-list-item-description">
+                <h3>BAKED FISH
+                <p>Something / Example / Rice / Meat
+              </div>
+              <span>27.99$
+          </li>
+          <li class="menu-list-item">
+            <figure>
+              <img src="./assets/food/croutons.jpg" alt="">
+            </figure>
+              <div class="menu-list-item-description">
+                <h3>CROUTONS
+                <p>Something / Example / Rice / Meat
+              </div>
+              <span>19.99$
+          </li>
+        </ul>
+      </div>
+      <div class="menu-list-block">
+        <ul>
+          <li class="menu-list-item">
+            <figure>
+              <img src="./assets/food/berry-salad.jpg" alt="">
+            </figure>
+              <div class="menu-list-item-description">
+                <h3>BERRY SALAD
+                <p>Something / Example / Rice / Meat
+              </div>
+              <span>17.99$
+          </li>
+          <li class="menu-list-item">
+            <figure>
+              <img src="./assets/food/chocolate-cupcake.jpg" alt="">
+            </figure>
+              <div class="menu-list-item-description">
+                <h3>CHOCOLATE CUPCAKE
+                <p>Something / Example / Rice / Meat
+              </div>
+              <span>24.99$
+          </li>
+          <li class="menu-list-item">
+            <figure>
+              <img src="./assets/food/fried-salmon.jpg" alt="">
+            </figure>
+              <div class="menu-list-item-description">
+                <h3>FRIED SALMON
+                <p>Something / Example / Rice / Meat
+              </div>
+              <span>29.99$
+          </li>
+          <li class="menu-list-item">
+            <figure>
+              <img src="./assets/food/fritters.jpg  " alt="">
+            </figure>
+              <div class="menu-list-item-description">
+                <h3>FLITTERS
+                <p>Something / Example / Rice / Meat
+              </div>
+              <span>19.99$
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="parallax-section parallax-section-3" id="reservation-form">
+      <div class="parallax-content">
+        <h2>Discover</h2>
+        <p>RESERVE A TABLE</p>
+      </div>
+    </section>
+
+    <!-- FORM -->
+
+  <form class="reservation-form section" action="/mail.php" method="POST"> <!-- /src/mail.php  -->
+    <div class="form-block">
+      <div class="form-block-people">
+        <label for="people">How Many People:</label>
+        <select id="people" name="people">
+          <option value="1">1 person</option>
+          <option value="2">2 people</option>
+          <option value="3">3 people</option>
+          <option value="4">4+ people</option>
+        </select>
+      </div>
+
+      <div class="form-block-date">
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" min="2023-08-28" value="2023-08-28">
+      </div>
+
+      <div class="form-block-time">
+        <label for="time">Select Time:</label>
+        <select id="time" name="time">
+          <option value="18:30">6:30 pm</option>
+          <option value="19:00">7:00 pm</option>
+          <option value="19:30">7:30 pm</option>
+          <option value="20:00">8:00 pm</option>
+          <option value="20:30">8:30 pm</option>
+          <option value="21:00">9:00 pm</option>
+          <option value="21:30">9:30 pm</option>
+          <option value="22:00">10:00 pm</option>
+          <option value="22:30">10:30 pm</option>
+          <option value="23:00">11:00 pm</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-block">
+      <div class="form-block-name">
+        <label for="name">Name:</label>
+        <div class="input-with-icon">
+          <input type="text" id="name" name="name" required>
+          <iconify-icon icon="ic:baseline-person"></iconify-icon>
+        </div>
+      </div>
+      <div class="form-block-email">
+        <label for="email">Email:</label>
+        <div class="input-with-icon">
+          <input type="email" id="email" name="email" required>
+          <iconify-icon icon="pepicons-pencil:letter"></iconify-icon>
+        </div>
+      </div>
+      <div class="form-block-phone">
+        <label for="phone">Phone:</label>
+         <div class="input-with-icon">
+          <input type="tel" id="phone" name="phone" required>
+          <iconify-icon icon="mingcute:phone-line"></iconify-icon>
+        </div>
+      </div>
+    </div>
+    <div class="form-sumbit-block">
+      <input class="form-sumbit" type="submit" value="SUBMIT">
+    </div>
+  </form>
+
+  <!-- FORM -->
+
+    <section class="parallax-section parallax-section-4" id="our-events">
+      <div class="parallax-content">
+        <h2>Discover</h2>
+        <p>OUR EVENTS</p>
+      </div>
+    </section>
+    
+    <section class="events section">
+      <div>
+        <figure> <img src="./assets/food/Raffaello-candies.jpg" alt=""></figure>
+        <span>JUNE 15, 2023</span>
+        <h3>Here Event title</h3>
+        <p>Here Event description. Write everything, but now here only a few word for example. Im need more word, so y could not read it at all. Good job you read everything.</p>
+        <a class="read-me">READ MORE</a>
+      </div>
+      <div>
+        <figure><img src="./assets/food/steak.jpg" alt=""></figure>
+        <span>JUNE 15, 2023</span>
+        <h3>Here Event title</h3>
+        <p>Here Event description. Write everything, but now here only a few word for example. Im need more word, so y could not read it at all. Good job you read everything.</p>
+        <a class="read-me">READ MORE</a>
+      </div>
+      <div>
+        <figure><img src="./assets/food/shrimp.jpg" alt=""></figure>
+        <span>JUNE 15, 2023</span>
+        <h3>Here Event title</h3>
+        <p>Here Event description. Write everything, but now here only a few word for example. Im need more word, so y could not read it at all. Good job you read everything.</p>
+        <a class="read-me">READ MORE</a>
+      </div>
+    </section>
+    <section class="chat section" id="contact">
+      <div class="chat-description">
+        <h2>Contact</h2>
+        <h3>LET'S CHAT</h3>
+        <p>To much description To much description To much description To much description To much description To much description To much description To much description</p>
+      </div>
+      <form class="chat-part" action="/mail.php" method="POST">  <!-- /src/mail.php  -->
+        <div class="chat-form">
+          <div class="form-block-name-chat">
+            <label  abel for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-block-email-chat">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-block-text-chat">
+            <label for="text">Text:</label>
+            <input type="text" id="text" name="text" required>
+          </div>
+        </div>
+        <div class="form-sumbit-block">
+          <input class="form-sumbit" type="submit" value="SUBMIT">
+        </div>
+      </form>
+    </section>
+    
   </main>
-  
-  <footer>
-    <p>&copy; 2023 Your Website. All rights reserved.</p>
+
+  <footer class="footer section">
+    <div class="footer-block">
+      <section class="footer-locations">
+        <h3>LOCATIONS</h3>
+        <div class="footer-locations-block">
+          <p>
+          251 east 12TH Street, Suite 488 <br>
+          Los Angeles LS 	90001
+          </p>
+          <p>
+          251 east 12TH Street, Suite 488 <br>
+          Los Angeles LS 	90001
+          </p>
+        </div>
+      </section>
+      <section class="footer-time">
+        <h3>OPEN HOURS</h3>
+          <div class="footer-time-block">
+            <p>Monday-Thursday <br> 6:30pm - 11:00pm</p>
+            <p>Friday-Sunday <br> 7:30pm - 10:00pm</p>
+            <p>Available for Catering <br> Email or Call Us</p>
+          </div>
+      </section>
+    </div>
+    <div class="footer-block-copy">
+      <div class="footer-copy-wrapper">
+        <p><span>&copy; 2023</span> Your Website. All rights reserved.</p>
+        <div class="footer-block-second">
+          <a href="ссылка на Instagram" target="_blank"> <iconify-icon class="icon" icon="entypo-social:instagram" style="color: gray;"></iconify-icon></a>
+          <a href="ссылка на Telegram" target="_blank"><iconify-icon class="icon" icon="uil:telegram" style="color: gray;"></iconify-icon></a>
+          <a href="ссылка на Viber" target="_blank"><iconify-icon class="icon" icon="basil:viber-solid" style="color: gray;"></iconify-icon></a>
+        </div>
+      </div>
+    </div>
   </footer>
-  
-  <script src="./index.js"></script> 
-</body>
+  <div class="modal" id="modal">
+  <div class="modal-content">
+    <p>Thank you for your submission!</p>
+  </div>
+</div>
+  <!-- <script src="./index.js"></script>  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script defer src="filename29925d86e631384a5dbf.js"></script></body>
 </html>

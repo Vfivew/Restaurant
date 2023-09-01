@@ -1,0 +1,174 @@
+@import "./variables.scss";
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+.chessboard-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.chessboard-menu {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: -3em 3em;
+}
+
+.square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-width: 270px;
+  min-height: 270px;
+  max-width: 270px;
+  max-height: 270px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; 
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    h3 {
+        font-weight: 400;
+        font-family: $base-font;
+        font-size: $second-size;
+        color: $second-color;
+        margin-bottom: 0.5em;
+    }
+    p{
+        font-weight: 400;
+        font-family: $base-font;
+        font-size: $base-size;
+        color: $fourth-color;
+        margin: 0 2em 2em 2em;
+    }
+    span{
+        color:$thirty-color
+    }
+}
+
+/*Second menu*/
+
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 4em 0;
+
+    .menu-list-block{
+        width: 50%;
+
+            .menu-list-item{
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                align-items: center;
+                    span{
+                        color:$thirty-color;
+                        font-weight:bold;
+                    }
+                    ul{
+                    list-style: none;
+                    }
+                    figure {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        position: relative;
+                        margin: 0.5em 0;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        }
+                    }
+                    .menu-list-item-description{
+                        width: 50%;
+                        text-align: left;
+                        display: flex;
+                        h3{
+                            font-weight: 500;
+                        }
+                        p{
+                            color:$fourth-color;
+                            font-weight: 400;
+                            font-size: $base-size;
+                        }
+                    }
+            }
+    }
+
+}
+
+@media (max-width: 1080px){
+    .chessboard-menu {
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: -3em 3em;
+    }
+}
+
+@media (max-width: 767px){
+    .chessboard-menu {
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: -3em 3em;
+    }  
+    .menu-list{
+        flex-direction: column;
+            .menu-list-block{
+                width: 100%;
+                .menu-list-item{
+                        flex-direction: column;
+                    .menu-list-item-description {
+                        width: 100%;
+                        text-align: center;
+                        display: block;
+                    }
+                    figure{
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+    }
+}
+
+@media (max-width: 567px){
+    .chessboard-menu {
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: -3em 3em;
+    }  
+}
+
+@media (min-width: 1280px){
+    .menu-list {
+        max-width: 1280px;
+        margin: 0 auto; 
+    }
+}
