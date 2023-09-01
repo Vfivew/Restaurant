@@ -9,7 +9,7 @@ module.exports = {
     filename: path.resolve(__dirname,"src/index.js")}, // Путь к вашему входному файлу
   output: {
     filename: '[name][contenthash].js', // Имя файла сборки
-    path: path.resolve(__dirname, 'dist'), // Путь к директории для сохранения
+    path: path.resolve(__dirname, 'docs'), // Путь к директории для сохранения
     assetModuleFilename: "[name][ext]",
     clean:true
   },
@@ -23,7 +23,7 @@ module.exports = {
     compress:true,
     hot:true,
     static:{    
-        directory: path.join(__dirname, "dist")
+        directory: path.join(__dirname, "docs")
     }
   },
   module:{
