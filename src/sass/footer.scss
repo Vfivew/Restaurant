@@ -1,106 +1,103 @@
 @import "./variables.scss";
-.footer{
-    background-color:$second-color;
+.footer {
+  background-color: $second-color;
 }
-.footer-block{
-    width: 100%;
-    min-height: 30vh;
+.footer-block {
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  font-family: $base-font;
+  font-size: $base-size;
+  color: $fourth-color;
+  background-color: $second-color;
+  align-items: center;
+
+  h3 {
+    color: $base-color;
+    text-align: left;
+    font-size: $thirty-size;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .footer-locations {
+    width: 50%;
+    margin: 1em 2em;
+  }
+
+  .footer-time {
+    width: 50%;
+    margin: 1em 2em;
+  }
+  .footer-locations-block {
+    justify-content: space-between;
     display: flex;
-    justify-content: space-around;
-    font-family: $base-font;
-    font-size: $base-size;
-    color:$fourth-color;
-    background-color:$second-color;
+    text-align: left;
+  }
+
+  .footer-time-block {
+    justify-content: space-between;
+    display: flex;
+    text-align: left;
+  }
+}
+
+.footer-block-copy {
+  background-color: #333;
+  color: $fourth-color;
+  padding: 1.4em;
+  .footer-copy-wrapper {
+    display: flex;
     align-items: center;
-
-        h3{
-            color:$base-color;
-            text-align: left;
-            font-size: $thirty-size;
-            font-weight: 400;
-            letter-spacing:2px;
-        }
-            .footer-locations{
-                width: 50%;
-                margin: 1em 2em;
-            }
-
-            .footer-time{
-                width: 50%;
-                margin: 1em 2em;
-            }
-                .footer-locations-block{
-                    justify-content: space-between;
-                    display: flex;
-                    text-align: left;
-                }
-
-            .footer-time-block{
-                    justify-content: space-between;
-                    display: flex;
-                    text-align: left;
-                }
+    justify-content: space-between;
+    background-color: #333;
+    span {
+      color: $base-color;
+    }
+    div {
+      a {
+        font-size: $thirty-size;
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
-.footer-block-copy{
-    background-color:#333;
-    color:$fourth-color;
-    padding: 1.4em;
-        .footer-copy-wrapper{
-        display:flex;
-        align-items:center;
-        justify-content: space-between;
-        background-color:#333;
-            span{
-                color:$base-color
-            }
-            div {
-                a {
-                    font-size: $thirty-size;
-                    margin-right: 10px;
-                }
-            }
-    }
+@media (min-width: 1280px) {
+  .footer-block {
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 400px;
+  }
 
+  .footer-block-copy {
+    background-color: #333;
+    .footer-copy-wrapper {
+      padding: 0 1.6em 0 1.6em;
+      margin: 0 auto;
+      background-color: #333;
+      max-width: 1280px;
+    }
+  }
 }
 
-
-@media (min-width: 1280px){
-    .footer-block {
-        max-width: 1280px;
-        margin: 0 auto; 
-        min-height: 400px;
+@media (max-width: 767px) {
+  .footer-block {
+    flex-direction: column;
+    h3 {
+      text-align: center;
+      padding: 4px 0 4px 0;
     }
-
-    .footer-block-copy{
-        background-color:#333;
-        .footer-copy-wrapper{
-            padding: 0 1.6em 0 1.6em;
-            margin: 0 auto; 
-            background-color:#333;
-            max-width: 1280px;
-    }
-    }
-}
-
-
-@media (max-width: 767px){
-    .footer-block{
+    .footer-locations,
+    .footer-time {
+      width: 100%;
+      p {
+        margin: 1em;
+      }
+      div {
         flex-direction: column;
-            h3{
-                text-align: center;
-                padding: 4px 0 4px 0;
-            }
-            .footer-locations, .footer-time{
-                width: 100%;
-                p{
-                    margin: 1em;
-                }
-                div{
-                    flex-direction: column;
-                    text-align: center;
-                }
-            }
+        text-align: center;
+      }
     }
-}   
-
+  }
+}
