@@ -1,45 +1,44 @@
 @import "./variables.scss";
 
 .parallax-section {
-  height: 600px; 
-  background-image: url('../assets/food/background/back1.jpg');
+  height: 600px;
+  background-image: url("../assets/food/background/back1.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   text-align: center;
-  color:$base-color;
-    h2{
+  color: $base-color;
+  h2 {
     color: $thirty-color;
-    font-size: 80px ;
+    font-size: 80px;
     font-family: $second-font;
     line-height: 0;
     font-weight: 400;
-    }
-    p {
-        color:$base-color;
-        font-size:54px ;
-        font-family: $base-font;
-        margin:0.5em 0 1em 0;
-        line-height: 0;
-        font-weight: bold;
-        word-wrap: break-word;
-    }
+  }
+  p {
+    color: $base-color;
+    font-size: 54px;
+    font-family: $base-font;
+    margin: 0.5em 0 1em 0;
+    line-height: 0;
+    font-weight: bold;
+    word-wrap: break-word;
+  }
 }
 
 .parallax-section-2 {
-    background-image: url('../assets/food/background/back2.jpg');
+  background-image: url("../assets/food/background/back2.jpg");
 }
 
 .parallax-section-3 {
-    background-image: url('../assets/food/background/back3.jpg');
+  background-image: url("../assets/food/background/back3.jpg");
 }
 
-
-@media (max-width: 767px){
-    .parallax-section{
-        background-attachment: scroll; 
-    }
-    .parallax-section p {
-        font-size: 38px;
-    }
+@media (max-width: 767px) {
+  .parallax-section {
+    background-attachment: scroll;
+  }
+  .parallax-section p {
+    font-size: 38px;
+  }
 }

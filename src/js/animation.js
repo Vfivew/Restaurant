@@ -1,7 +1,7 @@
 const sections = document.querySelectorAll(".section");
 
 function checkSectionVisibility() {
-  sections.forEach(section => {
+  sections.forEach((section) => {
     const sectionTop = section.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 

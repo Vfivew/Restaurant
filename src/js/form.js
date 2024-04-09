@@ -60,7 +60,7 @@ setupFormValidation(chatForm, chatNameInput, chatEmailInput, chatTextInput);
 
 function openModal(message) {
   modalContent.innerHTML = `<p>${message}</p>`;
-  
+
   const backButton = document.createElement("button");
   backButton.textContent = "Back to Home";
   backButton.style.backgroundColor = "orange";
@@ -69,18 +69,18 @@ function openModal(message) {
   backButton.style.borderRadius = "10px";
   backButton.style.padding = "10px 20px";
   backButton.style.cursor = "pointer";
-  backButton.style.margin = "6px"; 
+  backButton.style.margin = "6px";
 
 
   backButton.addEventListener("click", function() {
-    closeModal(); 
-    clearTimeout(modalTimeout); 
+    closeModal();
+    clearTimeout(modalTimeout);
   });
 
   modalContent.appendChild(backButton);
 
   modal.style.display = "flex";
-  
+
   const modalTimeout = setTimeout(closeModal, 5000);
 }
 

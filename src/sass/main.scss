@@ -1,22 +1,19 @@
-@import './cleanStyle.scss';
-@import './header.scss';
+@import "./cleanStyle.scss";
+@import "./header.scss";
 @import "./footer.scss";
-@import './store.scss';
-@import './parallax.scss';
+@import "./store.scss";
+@import "./parallax.scss";
 @import "./menu.scss";
 @import "./form.scss";
-@import './events.scss';
+@import "./events.scss";
 @import "./chat.scss";
-@import './animation.scss';
+@import "./animation.scss";
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family:$base-font;
-    scroll-behavior: smooth;
+  font-family: $base-font;
+  scroll-behavior: smooth;
 }
-
-
-

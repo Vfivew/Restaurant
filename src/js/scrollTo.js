@@ -4,7 +4,7 @@ function scrollToElement(elementId) {
     const startPosition = window.scrollY;
     const targetPosition = element.offsetTop;
     const distance = targetPosition - startPosition;
-    const duration = 800; // Время анимации в миллисекундах
+    const duration = 800;
     const startTime = performance.now();
 
     function step(currentTime) {
@@ -22,43 +22,40 @@ function scrollToElement(elementId) {
   }
 }
 
-// Получаем все навигационные ссылки
-const links = document.querySelectorAll('.nav-reference');
+const links = document.querySelectorAll(".nav-reference");
 
-links.forEach(link => {
-  link.addEventListener('click', function (event) {
+links.forEach((link) => {
+  link.addEventListener("click", function (event) {
     event.preventDefault();
 
-    // Удалить класс active-link из всех ссылок
-    links.forEach(otherLink => {
-      otherLink.classList.remove('active');
+    links.forEach((otherLink) => {
+      otherLink.classList.remove("active");
     });
 
     const linkText = this.textContent.trim().toUpperCase();
 
     switch (linkText) {
-      case 'WELCOME':
-        scrollToElement('header');
+      case "WELCOME":
+        scrollToElement("header");
         break;
-      case 'SPECIALTIES':
-        scrollToElement('menu');
+      case "SPECIALTIES":
+        scrollToElement("menu");
         break;
-      case 'MENU':
-        scrollToElement('menu-list');
+      case "MENU":
+        scrollToElement("menu-list");
         break;
-      case 'RESERVATION':
-        scrollToElement('reservation-form');
+      case "RESERVATION":
+        scrollToElement("reservation-form");
         break;
-      case 'EVENTS':
-        scrollToElement('our-events');
+      case "EVENTS":
+        scrollToElement("our-events");
         break;
-      case 'CONTACT':
-        scrollToElement('contact');
+      case "CONTACT":
+        scrollToElement("contact");
         break;
     }
 
-    // Добавить класс active-link к текущей активной ссылке
-    this.classList.add('active');
+    this.classList.add("active");
   });
 });
 
